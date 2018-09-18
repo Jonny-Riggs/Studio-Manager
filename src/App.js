@@ -83,11 +83,15 @@ class App extends Component {
             <Route exact path="/contact" render={(props) => {
               return <Contact {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
             }} />
-            <Route path="/home" component={Home} />
+            <Route exact path="/home" render={(props) => {
+              return <Home {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
+            }} />
             <Route exact path="/gear" render={(props) => {
               return <Gear {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
             }} />
-            <Route path="/meeting" component={Meeting} />
+            <Route exact path="/meeting" render={(props) => {
+              return <Meeting {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
+            }} />
             <Route path="/session" component={Session} />
             <Route path="/show" component={Show} />
           </div>

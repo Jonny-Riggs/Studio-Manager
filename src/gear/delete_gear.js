@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Gear from './gear';
 
 export default class Delete extends Component {
 
