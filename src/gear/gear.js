@@ -20,7 +20,7 @@ export default class Gear extends Component {
         return r.json();
       })
       .then(gear_list => {
-        console.log('contacts', gear_list);
+        console.log('gear', gear_list);
         this.setState({ gear_list });
       })
       .catch(err => {
@@ -39,7 +39,7 @@ export default class Gear extends Component {
   postGear = function(response) {
     const newArray = this.state.gear_list;
     newArray.push(response);
-    response.preventDefault;
+    response.preventDefault();
     this.setState({
       gear_list: newArray,
       brand: '',
@@ -69,7 +69,7 @@ export default class Gear extends Component {
       }),
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Token ${authKey}`,
+        'Authorization': `Token ${authKey}`,
       },
     })
       .then(response => response.json())
@@ -99,7 +99,7 @@ export default class Gear extends Component {
           return (
             <div className="ui raised red card" key={e.id}>
               <div className="image">
-                <img src={e.image} />
+                <img alt="" src={e.image} />
               </div>
               <div className="content">
                 <a className="header">{e.brand}</a>

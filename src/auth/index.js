@@ -4,7 +4,6 @@ import {
   Form,
   Grid,
   Header,
-  Image,
   Message,
   Segment,
 } from 'semantic-ui-react';
@@ -194,7 +193,7 @@ export default class Auth extends Component {
                 />
               </div>
             </div>
-            <button type="submit" className="ui button" role="button" onClick = {() => register ? this.register() : this.login()}>
+            <button type="submit" className="ui button" onClick = {() => register ? this.register() : this.login()}>
               Submit
             </button>
           </form>

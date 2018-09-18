@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 export default class Post extends Component {
   render() {
     return (
-      <div className="ui form">
+      <div className="ui inverted segment">
+      <div className="ui inverted form">
         <div className="fields">
           <div className="field">
             <label>Brand</label>
@@ -55,6 +56,7 @@ export default class Post extends Component {
           </div>
         <button className="ui red button" value="submit" onClick={this.props.createGear}>Add Gear</button>
         </div>
+      </div>
       </div>
     );
   }

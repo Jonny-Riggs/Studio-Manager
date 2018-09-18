@@ -5,7 +5,8 @@ export default class Post extends Component {
 
   render() {
     return (
-      <form className="ui form">
+      <div className="ui inverted segment">
+        <form className="ui inverted form">
         <div className="field">
           <label>First Name</label>
           <input
@@ -63,6 +64,7 @@ export default class Post extends Component {
         </div>
         <input className="ui button" value="submit" type="button" onClick={this.props.createContact}/>
       </form>
+      </div>
     );
   }
 }
