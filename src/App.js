@@ -84,7 +84,9 @@ class App extends Component {
               return <Contact {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
             }} />
             <Route path="/home" component={Home} />
-            <Route path="/gear" component={Gear} />
+            <Route exact path="/gear" render={(props) => {
+              return <Gear {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
+            }} />
             <Route path="/meeting" component={Meeting} />
             <Route path="/session" component={Session} />
             <Route path="/show" component={Show} />
