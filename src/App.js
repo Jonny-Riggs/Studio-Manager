@@ -7,7 +7,6 @@ import Auth from './auth';
 import Gear from './gear/gear';
 import Meeting from './meeting/meeting'
 import Session from './session/session'
-import Show from './show/show'
 
 class App extends Component {
   state = {
@@ -93,7 +92,6 @@ class App extends Component {
               return <Meeting {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
             }} />
             <Route path="/session" component={Session} />
-            <Route path="/show" component={Show} />
           </div>
         </Router>
       </div>

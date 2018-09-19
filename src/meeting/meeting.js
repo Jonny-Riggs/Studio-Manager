@@ -39,7 +39,6 @@ export default class Meeting extends Component {
   postMeeting = function(response) {
     const newArray = this.state.meeting_list;
     newArray.push(response);
-    response.preventDefault();
     this.setState({
       meeting_list: newArray,
       person: '',

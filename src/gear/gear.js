@@ -39,7 +39,6 @@ export default class Gear extends Component {
   postGear = function(response) {
     const newArray = this.state.gear_list;
     newArray.push(response);
-    response.preventDefault();
     this.setState({
       gear_list: newArray,
       brand: '',

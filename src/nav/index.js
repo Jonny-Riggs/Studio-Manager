@@ -24,7 +24,6 @@ export default class Nav extends Component {
         <Link to="/contact" className="red active item">Contacts</Link>
         <Link to="/meeting" className="red active item">Book A Meeting</Link>
         <Link to="/session" className="red active item">Book A Session</Link>
-        <Link to="/show" className="red active item">Shows</Link>
         <div className="right menu">
           <div className="item">
             <div className="ui icon input">

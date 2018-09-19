@@ -38,7 +38,6 @@ export default class Contact extends Component {
   postContact = function(response) {
     const newArray = this.state.contact_list;
     newArray.push(response);
-    response.preventDefault();
     this.setState({
       contact_list: newArray,
       studio_manager: '',
