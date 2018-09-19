@@ -91,7 +91,9 @@ class App extends Component {
             <Route exact path="/meeting" render={(props) => {
               return <Meeting {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
             }} />
-            <Route path="/session" component={Session} />
+            <Route exact path="/session" render={(props) => {
+              return <Session {...props} token={this.state.token} studio_manager={this.state.studio_manager} />
+            }} />
           </div>
         </Router>
       </div>
