@@ -27,7 +27,7 @@ export default class Nav extends Component {
         <div className="right menu">
           <div className="item">
             <div className="ui icon input">
-              <input type="text" placeholder="Search..." />
+              {/* <input type="text" placeholder="Search..." /> */}
               <i aria-hidden="true" className="search icon" />
             </div>
           </div>
