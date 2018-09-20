@@ -52,7 +52,6 @@ export default class Gear extends Component {
   };
 
   createGear = function(evt) {
-    // const {first_name = "", last_name, email, phone, desc, studio_manager} = this.state
     const authKey = this.props.token;
 
     return fetch(`http://127.0.0.1:8000/gear/`, {

@@ -50,7 +50,6 @@ export default class Session extends Component {
 
   createSession = function(evt) {
     const authKey = this.props.token;
-
     return fetch(`http://127.0.0.1:8000/session/`, {
       method: 'POST',
       body: JSON.stringify({
@@ -92,25 +91,25 @@ export default class Session extends Component {
           <div className="completed step">
             <div className="content">
               <div className="title">{s.artist}</div>
-              <div className="description">Choose your shipping options</div>
+              <div className="description">Artist</div>
             </div>
           </div>
           <div className="completed step">
             <div className="content">
               <div className="title">{s.genre}</div>
-              <div className="description">Enter billing information</div>
+              <div className="description">Genre</div>
             </div>
           </div>
           <div className="completed step">
             <div className="content">
               <div className="title">{s.reservation}</div>
-              <div className="description">Enter billing information</div>
+              <div className="description">Reservation</div>
             </div>
           </div>
           <div className="completed step">
             <div className="content">
               <div className="title">{s.cost}</div>
-              <div className="description">Enter billing information</div>
+              <div className="description">Session Cost</div>
             </div>
           </div>
           <Delete

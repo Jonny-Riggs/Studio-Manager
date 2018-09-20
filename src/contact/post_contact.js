@@ -14,7 +14,6 @@ export default class Post extends Component {
           name="first-name"
           placeholder="First Name"
           onChange={this.props.handleFieldChange}
-          // value={this.props.first_name}
           id="first_name"
           />
         </div>
@@ -25,7 +24,6 @@ export default class Post extends Component {
           name="last-name"
           placeholder="Last Name"
           onChange={this.props.handleFieldChange}
-          // value={this.props.last_name}
           id="last_name"
           />
         </div>
@@ -36,7 +34,6 @@ export default class Post extends Component {
           name="email"
           placeholder="Email"
           onChange={this.props.handleFieldChange}
-          // value={this.props.email}
           id="email"
           />
         </div>
@@ -47,7 +44,6 @@ export default class Post extends Component {
           name="phone"
           placeholder="Phone"
           onChange={this.props.handleFieldChange}
-          // value={this.props.phone}
           id="phone"
           />
         </div>
@@ -58,11 +54,10 @@ export default class Post extends Component {
           name="desc"
           placeholder="Description"
           onChange={this.props.handleFieldChange}
-          // value={this.props.desc}
           id="desc"
           />
         </div>
-        <input className="ui button" value="submit" type="button" onClick={this.props.createContact}/>
+        <button className="ui button" type="submit" onClick={this.props.createContact}>Submit</button>
       </form>
       </div>
     );

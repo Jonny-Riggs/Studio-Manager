@@ -47,10 +47,9 @@ export default class Contact extends Component {
       phone: '',
       desc: '',
     });
-  };
+  }.bind(this)
 
   createContact = function(evt) {
-    // const {first_name = "", last_name, email, phone, desc, studio_manager} = this.state
     const authKey = this.props.token;
 
     return fetch(`http://127.0.0.1:8000/contact/`, {
@@ -65,7 +64,7 @@ export default class Contact extends Component {
       }),
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Token ${authKey}`,
+        'Authorization': `Token ${authKey}`,
       },
     })
       .then(response => response.json())
