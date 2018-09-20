@@ -54,7 +54,7 @@ export default class Post extends Component {
             id="image"
             />
           </div>
-        <button className="ui red button" value="submit" onClick={this.props.createGear}>Add Gear</button>
+        <button className="ui red button" type="submit" onClick={this.props.createGear}>Add Gear</button>
         </div>
       </div>
       </div>
