@@ -34,7 +34,7 @@ export default class Post extends Component {
                   />
                 </div>
               </div>
-              <div class="field">
+              <div className="field">
                 <label>Description</label>
                 <input
                 rows="3"
